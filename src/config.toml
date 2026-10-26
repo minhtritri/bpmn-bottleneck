@@ -1,0 +1,31 @@
+[experiment]
+seed = 42
+seeds = [17, 42, 73, 101, 137]
+test_start = "2020-07"
+validation_start = "2020-01"
+trees = 300
+max_depth = 6
+classification_threshold = 0.5
+top_fraction = 0.20
+surge_ratio = 1.5
+surge_min_wip = 20
+history_months = 6
+min_history = 3
+
+[embedding]
+dimensions = 16
+p = 1.0
+q = 0.5
+walks_per_node = 30
+walk_length = 20
+window = 5
+epochs = 10
+history_months = 3
+
+[simulation]
+replications = 10000
+queue_reductions = [0.0, 0.10, 0.25, 0.40]
+rework_reductions = [0.0, 0.10, 0.25, 0.40]
+timer_hours = 72.0
+qc_dispatch_delay_hours = 2.0
+
